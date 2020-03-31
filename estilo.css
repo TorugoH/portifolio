@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    /*background-color: #8886853d;*/
+    background: rgb(53, 54, 58);
+    color:#c8cdd2;
+}
+footer{
+    height: 10em;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover{
+    color: #cacaca;
+}
+/*menu*/
+header{
+    background-color: #282d2dfa;
+    background-image: url('imagens/fundo.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 15px;
+    height: 44em;
+}
+
+.lado{
+    /*float: left;*/
+    position: relative;
+    display: inline-block;
+}
+nav ul{
+    position: relative;
+    top: 28em;
+    text-align: center;
+}
+#menu li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    font-size: 1.5em;
+}
+span{
+    color: brown;
+}
+#menu h1{
+    font-size: 5em;
+    padding: 3px;
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    top: 3em;
+    
+}
+#menu h2{
+    font-size: 1.5em;
+    padding: 3px;
+    text-align: center;
+    color: aliceblue;
+    position: relative;
+    top: 12em;
+    
+}
+/*corpo da aplicação*/
+main{
+    width: 98%;
+}
+p{
+  text-align:justify;
+    line-height: 1.4em;
+    width: 52em;
+    position: relative;
+    left: 10em;
+}
+.listas{
+    /*class por fazer as lista*/
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+}
+.organizacaoconteudo{
+    width: 99%;
+    padding-left: 15px; 
+}
+#geral{
+    padding: 10px 10px 6px 25px;
+}
+main img{
+    width: 400px;
+}
+#sobre{
+    top: 10px;
+    position: relative;
+    left: 2em;
+}
+#experiencia{
+    position: relative;
+    top: 10px;
+    left: 2em;
+    padding-top: 30px;
+}
+#projetos{
+    clear: both;
+    top: 15px;
+    position: relative;
+    left: 1em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+h3{
+    padding: 3px;
+}
+th img{
+    height: 30px;
+    width: 30px;
+}
+.linguagens{
+    float: left;
+    padding-left: 5em;
+}
+#linguagens{
+    float: left;
+}
+#experiencia ul{
+    position: relative;
+    left: 14em;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+
+/*rodape*/
+footer{
+    background-color: #282d2dfa;
+    padding-top: 30px;   
+}
+#contatos img{
+    padding:5px;
+    width: 50px;
+    height: 50px;
+}
+#contatos{
+    margin: 0 auto;
+    width: 20%;
+    padding-top: 3em;
+}
+#contatos img:hover{
+    height: 60px;
+    width: 60px;
+}
+/*parte resposiva*/
+@media(max-width:760px){
+    body{
+        overflow-x: hidden;
+        /*background-color: #8886853d;*/
+        background: rgb(53, 54, 58);
+        color:#c8cdd2;
+    }
+    
+    
+    header {
+        background-color: #282d2dfa;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        height: 49em;
+        width: 100%;
+    }
+    main img {
+        width: 278px;
+    }
+    ul {
+        position: relative;
+        top: 20em;
+        
+    }
+    footer {
+        background-color: #282d2dfa;
+        height: 18em;
+        width: 100%;
+    }
+    p{
+        text-align: justify;
+        line-height: 1.4em;
+        width: 15em;
+        position: relative;
+        left: 1em;
+    }
+      
+    #experiencia {
+        position: relative;
+        top: 10px;
+        padding-top: 30px;
+        left: 0;
+    }
+    #experiencia ul{
+        position: relative;
+    top: 1em;
+    left: 5em;
+    }
+    #menu h1 {
+        font-size: 5em;
+        /* padding: 3px; */
+        text-align: center;
+        color: aliceblue;
+        position: relative;
+        top: 1em;
+        left: -1em;
+    }
+    #menu h2 {
+        font-size: 1.5em;
+        padding: 3px;
+        text-align: center;
+        color: aliceblue;
+        position: relative;
+        top: 6em;
+        left: -2em;
+    }
+    nav ul {
+        position: relative;
+        top: 18em;
+        text-align: center;
+        width: 30%;
+    }
+    #projetos {
+        clear: both;
+        top: 15px;
+        position: relative;
+        left: -1em;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .organizacaoconteudo {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+        span {
+            color: brown;
+            left: 53px;
+            position: relative;
+        }
+        #sobre {
+            top: 10px;
+            position: relative;
+            left: 0em;
+        }
+
+}
+
+@media (min-width:768px)and(max-width:1020px){
+    header, footer {
+        height: 10em;
+        padding: 15px;                                                                                   
+        width: 100%;
+    }
+    header {
+    background-color: #282d2dfa;
+    background-image: url('imagens/fundo.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 63em;
+    
+    }
+    main img {
+        width: 313px;
+    }
+    ul {
+        position: relative;
+        top: 20em;
+        
+    }
+    footer {
+        background-color: #282d2dfa;
+        height: 18em;
+    }
+    p {
+        text-align: justify;
+        line-height: 1.4em;
+        width: 43em;
+        position: relative;
+        /* left: 10em; */
+    }
+
+}
+/*375-500px
+
+//360<px
+
+768-900px{
+//1024px
+header {
+    background-color: #282d2dfa;
+    background-image: url(imagens/fundo.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 84em;
+}
+*/
