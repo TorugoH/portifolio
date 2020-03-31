@@ -166,6 +166,7 @@ footer{
     
     
     header {
+        background-image: url('imagens/fundo.jpg');
         background-color: #282d2dfa;
         background-position: center top;
         background-repeat: no-repeat;
@@ -223,7 +224,7 @@ footer{
         color: aliceblue;
         position: relative;
         top: 6em;
-        left: -2em;
+        left: -1em;
     }
     nav ul {
         position: relative;
