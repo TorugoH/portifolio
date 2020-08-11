@@ -1,3 +1,7 @@
+@font-face{
+    font-family: "titulo";
+    src: url("fonte/FredokaOne-Regular.ttf") format('truetype');
+}
 *{
     margin: 0;
     padding: 0;
@@ -9,8 +13,10 @@ body{
     color:#c8cdd2;
 }
 footer{
+    background-color: #282d2dfa ;
     height: 10em;
     padding: 15px;
+    width: 105%;
 }
 a{
     text-decoration: none;
@@ -30,17 +36,28 @@ header{
     position: relative;
     padding: 15px;
     height: 44em;
+    width: 100%;
 }
 
 .lado{
-    /*float: left;*/
     position: relative;
     display: inline-block;
 }
 nav ul{
-    position: relative;
-    top: 28em;
+   
+}
+#campodeOpcaonudeOpcao{
+    position: fixed;
+    top: 2em;
     text-align: center;
+    padding: 13px;
+    /* margin: 0 auto; */
+    left: 29%;
+    
+}
+#campodeOpcao{
+    position: fixed;
+    z-index: 1;
 }
 #menu li{
     list-style: none;
@@ -58,7 +75,12 @@ span{
     color: aliceblue;
     position: relative;
     top: 3em;
+    font-family: "titulo",cursive;
     
+}
+#sobre h1, #experiencia h1, #projetos h1{
+    text-align: center;
+    font-size: 4em;
 }
 #menu h2{
     font-size: 1.5em;
@@ -66,19 +88,18 @@ span{
     text-align: center;
     color: aliceblue;
     position: relative;
-    top: 12em;
+    top: 14em;
+    font-family: "titulo",cursive;
     
 }
-/*corpo da aplicação*/
-main{
-    width: 98%;
+#sobre img{
+    float: left;
+    padding: 15px;
 }
-p{
-  text-align:justify;
-    line-height: 1.4em;
-    width: 52em;
-    position: relative;
-    left: 10em;
+/*corpo da aplicação*/
+#sobre p{
+  padding: 20px;
+  text-align: justify;
 }
 .listas{
     /*class por fazer as lista*/
@@ -87,31 +108,43 @@ p{
     padding: 10px;
 }
 .organizacaoconteudo{
-    width: 99%;
+   /* width: 99%;*/
     padding-left: 15px; 
 }
-#geral{
-    padding: 10px 10px 6px 25px;
+/*#geral{
+   /* padding: 10px 10px 6px 25px;
+}*/
+.b{
+    text-align: center;
+    font-size: 4em;
+    top: 0.5em;
+    position: relative;
+    padding: 15px;
 }
 main img{
     width: 400px;
 }
 #sobre{
-    top: 10px;
+    top: 15px;
     position: relative;
-    left: 2em;
+    height: 44em;
+    margin-left: 55px;
 }
 #experiencia{
+   /* background-color: #282d2dfa ;*/
+   background-image: url('imagens/fundopreto.png');
     position: relative;
-    top: 10px;
-    left: 2em;
+    top: 15px;
     padding-top: 30px;
+    height: 44em;
+    width: 105%;
+    
 }
 #projetos{
     clear: both;
     top: 15px;
     position: relative;
-    left: 1em;
+    left: 3em;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -129,17 +162,28 @@ th img{
 #linguagens{
     float: left;
 }
-#experiencia ul{
-    position: relative;
-    left: 14em;
-    padding-top: 24px;
-    padding-bottom: 12px;
-}
 
-/*rodape*/
-footer{
-    background-color: #282d2dfa;
-    padding-top: 30px;   
+.servico{
+    float: left;
+    padding: 24px;
+}
+.servico img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 8em;
+}
+.servico h3{
+    font-size: 24px;
+    text-align: center;
+}
+#apresentacao{
+    padding: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: 4em;
+    left: 6em;
+    margin-left: 23px;
 }
 #contatos img{
     padding:5px;
@@ -192,7 +236,7 @@ footer{
     p{
         text-align: justify;
         line-height: 1.4em;
-        width: 15em;
+        width: 305px;
         position: relative;
         left: 1em;
     }
@@ -205,8 +249,8 @@ footer{
     }
     #experiencia ul{
         position: relative;
-    top: 1em;
-    left: 5em;
+        top: 1em;
+        left: 5em;
     }
     #menu h1 {
         font-size: 5em;
@@ -245,16 +289,16 @@ footer{
         padding-left: 15px;
     }
 
-        span {
-            color: brown;
-            left: 53px;
-            position: relative;
-        }
-        #sobre {
-            top: 10px;
-            position: relative;
-            left: 0em;
-        }
+    span {
+        color: brown;
+        left: 53px;
+        position: relative;
+    }
+    #sobre {
+        top: 10px;
+        position: relative;
+         left: 0em;
+    }
 
 }
 
@@ -273,7 +317,6 @@ footer{
     background-attachment: fixed;
     position: relative;
     height: 63em;
-    
     }
     main img {
         width: 313px;
@@ -290,7 +333,7 @@ footer{
     p {
         text-align: justify;
         line-height: 1.4em;
-        width: 43em;
+        width: 305px;
         position: relative;
         /* left: 10em; */
     }
