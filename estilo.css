@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
 }
+.selecionado{
+    opacity:0;
+}
 body{
     overflow-x: hidden;
     /*background-color: #8886853d;*/
@@ -81,6 +84,8 @@ span{
 #sobre h1, #experiencia h1, #projetos h1{
     text-align: center;
     font-size: 4em;
+    position: relative;
+    left: -1em;
 }
 #menu h2{
     font-size: 1.5em;
@@ -101,20 +106,8 @@ span{
   padding: 20px;
   text-align: justify;
 }
-.listas{
-    /*class por fazer as lista*/
-    display: inline-block;
-    margin: 0 auto;
-    padding: 10px;
-}
-.organizacaoconteudo{
-   /* width: 99%;*/
-    padding-left: 15px; 
-}
-/*#geral{
-   /* padding: 10px 10px 6px 25px;
-}*/
-.b{
+/*Carrosel*/
+.TituloPortifolio{
     text-align: center;
     font-size: 4em;
     top: 0.5em;
@@ -125,20 +118,11 @@ main img{
     width: 400px;
 }
 #sobre{
+    padding-top: 7em;
     top: 15px;
     position: relative;
-    height: 44em;
+    height: 54em;
     margin-left: 55px;
-}
-#experiencia{
-   /* background-color: #282d2dfa ;*/
-   background-image: url('imagens/fundopreto.png');
-    position: relative;
-    top: 15px;
-    padding-top: 30px;
-    height: 44em;
-    width: 105%;
-    
 }
 #projetos{
     clear: both;
@@ -147,22 +131,30 @@ main img{
     left: 3em;
     padding-top: 30px;
     padding-bottom: 30px;
+    height: 54em;
 }
 h3{
     padding: 3px;
 }
-th img{
-    height: 30px;
-    width: 30px;
+#carrosel{
+    position: relative;
+    left: -2em;
+    top:1em;
 }
-.linguagens{
-    float: left;
-    padding-left: 5em;
+#carrosel img{
+    width: 80%;
+    height: 0%;
+    position: relative;
 }
-#linguagens{
-    float: left;
+#proximo{
+    position: relative;
+    left: 89em;
 }
-
+#anterior{
+    position: relative;
+    left: 1em;
+}
+/*Quadros com as experiencias*/
 .servico{
     float: left;
     padding: 24px;
@@ -178,13 +170,25 @@ th img{
     text-align: center;
 }
 #apresentacao{
-    padding: 30px;
-    margin: 0 auto;
-    position: relative;
-    top: 4em;
-    left: 6em;
-    margin-left: 23px;
+   position: relative;
+   top: 10em;
+   left: 25%;
 }
+#experiencia{
+    padding-top: 7em;
+    background-image: url('imagens/fundopreto.png');
+    position: relative;
+    top: 15px;
+    padding-top: 30px;
+    height: 44em;
+    width: 105%;    
+}
+#experiencia h1{
+    position: relative;
+    top: 1em;
+}
+
+/*Parte dos contatos(Roda pe)*/
 #contatos img{
     padding:5px;
     width: 50px;
@@ -200,159 +204,3 @@ th img{
     width: 60px;
 }
 /*parte resposiva*/
-@media(max-width:760px){
-    body{
-        overflow-x: hidden;
-        /*background-color: #8886853d;*/
-        background: rgb(53, 54, 58);
-        color:#c8cdd2;
-    }
-    
-    
-    header {
-        background-image: url('imagens/fundo.jpg');
-        background-color: #282d2dfa;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        position: relative;
-        height: 49em;
-        width: 100%;
-    }
-    main img {
-        width: 278px;
-    }
-    ul {
-        position: relative;
-        top: 20em;
-        
-    }
-    footer {
-        background-color: #282d2dfa;
-        height: 18em;
-        width: 100%;
-    }
-    p{
-        text-align: justify;
-        line-height: 1.4em;
-        width: 305px;
-        position: relative;
-        left: 1em;
-    }
-      
-    #experiencia {
-        position: relative;
-        top: 10px;
-        padding-top: 30px;
-        left: 0;
-    }
-    #experiencia ul{
-        position: relative;
-        top: 1em;
-        left: 5em;
-    }
-    #menu h1 {
-        font-size: 5em;
-        /* padding: 3px; */
-        text-align: center;
-        color: aliceblue;
-        position: relative;
-        top: 1em;
-        left: -1em;
-    }
-    #menu h2 {
-        font-size: 1.5em;
-        padding: 3px;
-        text-align: center;
-        color: aliceblue;
-        position: relative;
-        top: 6em;
-        left: -1em;
-    }
-    nav ul {
-        position: relative;
-        top: 18em;
-        text-align: center;
-        width: 30%;
-    }
-    #projetos {
-        clear: both;
-        top: 15px;
-        position: relative;
-        left: -1em;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .organizacaoconteudo {
-        width: 100%;
-        padding-left: 15px;
-    }
-
-    span {
-        color: brown;
-        left: 53px;
-        position: relative;
-    }
-    #sobre {
-        top: 10px;
-        position: relative;
-         left: 0em;
-    }
-
-}
-
-@media (min-width:768px)and(max-width:1020px){
-    header, footer {
-        height: 10em;
-        padding: 15px;                                                                                   
-        width: 100%;
-    }
-    header {
-    background-color: #282d2dfa;
-    background-image: url('imagens/fundo.jpg');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    height: 63em;
-    }
-    main img {
-        width: 313px;
-    }
-    ul {
-        position: relative;
-        top: 20em;
-        
-    }
-    footer {
-        background-color: #282d2dfa;
-        height: 18em;
-    }
-    p {
-        text-align: justify;
-        line-height: 1.4em;
-        width: 305px;
-        position: relative;
-        /* left: 10em; */
-    }
-
-}
-/*375-500px
-
-//360<px
-
-768-900px{
-//1024px
-header {
-    background-color: #282d2dfa;
-    background-image: url(imagens/fundo.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    height: 84em;
-}
-*/
